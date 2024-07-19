@@ -22,22 +22,28 @@ function setGridSize(squares) {
     
         sketchArea.appendChild(gridCell);
         console.log(`Added cell number ${i}`);
-        return 0;
     }
-
-    
 }
+
+function removeGridCells() {
+    while(sketchArea.firstChild) {
+        sketchArea.removeChild(sketchArea.firstChild);
+    }
+}
+
 
 setGridSize(defaultSquares);
 
 sizeSetterButton = document.querySelector(".size-button");
 sizeSetterButton.addEventListener("click", function() {
     const enteredSquares = document.getElementById("size-input").value;
+    removeGridCells();
     setGridSize(enteredSquares);
 });
 
 resetButton = document.querySelector(".reset");
 resetButton.addEventListener("click", function(){
+    removeGridCells();
     setGridSize(defaultSquares);
 });
 
