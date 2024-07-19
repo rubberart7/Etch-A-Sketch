@@ -22,6 +22,7 @@ function setGridSize(squares) {
     
         sketchArea.appendChild(gridCell);
         console.log(`Added cell number ${i}`);
+        return 0;
     }
 
     
