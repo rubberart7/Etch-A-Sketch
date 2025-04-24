@@ -12,11 +12,13 @@ body {
     display: flex;
     flex-wrap: wrap;
     background-color: white;
-    margin: 20px auto;
+    margin: 1rem auto;
 }
 
+/* the sketch area css makes it wrap up in a nice row */
+
 .cell {
-    border: 1px solid black;
+    border: 0.1rem solid black;
 }
 
 .main-heading {
@@ -27,6 +29,6 @@ body {
 .settings {
     display: flex;
     justify-content: center;
-    gap: 30px;
-    margin-top: 10px;
+    gap: 2rem;
+    margin-top: 2rem;
 }
